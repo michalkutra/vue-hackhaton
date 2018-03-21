@@ -8,6 +8,10 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "axios": "^0.18.0",
+    "humps": "^2.0.1",
+    "moment": "^2.21.0",
+    "normalizr": "^3.2.4",
     "vue": "^2.5.13"
   },
   "devDependencies": {
