@@ -1,17 +1,21 @@
 import Vue from 'vue'
 import App from './App.vue'
-import Request from './plugins/request';
+//import Request from './plugins/request';
+import router from './router';
+import store from './store'
 
 Vue.config.productionTip = false;
 
-/* eslint-disable */
+/* eslint-disable * /
 const {
   apiDomain,
 } = dpApp;
 
+/*
 localStorage.setItem('auth', JSON.stringify({'access_token': 'YWQ3NDQ4YTI2OTkxZGMxYjBjM2M5NjgxZTYyNDI0MmJlNTVjNTk0MWY2NzQzNDU5ZDUxNmY4ZDAxYzdhNjFjNg'}));
 /* eslint-enable */
 
+/*
 Vue.use(Request, {
   useInterceptors: true,
   interceptorOptions: {
@@ -22,7 +26,10 @@ Vue.use(Request, {
     },
   },
 });
+*/
 
 new Vue({
+   router,
+    store,
   render: h => h(App)
 }).$mount('#app');
