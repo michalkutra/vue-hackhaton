@@ -9,7 +9,7 @@ const {
   apiDomain,
 } = dpApp;
 
-localStorage.setItem('auth', JSON.stringify({'access_token': 'ZGI1NDQxZDIzNGU1YzY1YzM2ZjdjZTIyZTI1MTJhZDk2NTA2YzNlMDJjMGQyZjJhN2NlMzI1MzIzOTU4Y2Y2YQ'}));
+localStorage.setItem('auth', JSON.stringify({'access_token': 'YWQ3NDQ4YTI2OTkxZGMxYjBjM2M5NjgxZTYyNDI0MmJlNTVjNTk0MWY2NzQzNDU5ZDUxNmY4ZDAxYzdhNjFjNg'}));
 /* eslint-enable */
 
 Vue.use(Request, {
