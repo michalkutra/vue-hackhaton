@@ -2,7 +2,7 @@
   <div class="hello">
     <h1>{{ msg }}</h1>
 
-    <ul>
+    <ul v-if="!isLoading">
       <li
         v-for="(slot, key) in slots"
         :key="key"
@@ -10,6 +10,9 @@
         {{ slot.start }}
       </li>
     </ul>
+    <p v-else>
+      Loading...
+    </p>
   </div>
 </template>
 
@@ -30,6 +33,7 @@ export default {
   data () {
     return {
       slots: {},
+      isLoading: true,
     }
   },
 
@@ -45,6 +49,8 @@ export default {
           },
         },
       });
+
+      this.isLoading = false;
 
       return response.items;
     },
